@@ -1,26 +1,25 @@
 {
   "files": {
     "main.css": "/studio.analytixa/static/css/main.eb5df336.chunk.css",
-    "main.js": "/studio.analytixa/static/js/main.c1d1f387.chunk.js",
-    "main.js.map": "/studio.analytixa/static/js/main.c1d1f387.chunk.js.map",
+    "main.js": "/studio.analytixa/static/js/main.f08cc6a3.chunk.js",
+    "main.js.map": "/studio.analytixa/static/js/main.f08cc6a3.chunk.js.map",
     "runtime-main.js": "/studio.analytixa/static/js/runtime-main.c85ebe02.js",
     "runtime-main.js.map": "/studio.analytixa/static/js/runtime-main.c85ebe02.js.map",
-    "static/js/2.7b312952.chunk.js": "/studio.analytixa/static/js/2.7b312952.chunk.js",
-    "static/js/2.7b312952.chunk.js.map": "/studio.analytixa/static/js/2.7b312952.chunk.js.map",
+    "static/js/2.08ba424c.chunk.js": "/studio.analytixa/static/js/2.08ba424c.chunk.js",
+    "static/js/2.08ba424c.chunk.js.map": "/studio.analytixa/static/js/2.08ba424c.chunk.js.map",
     "index.html": "/studio.analytixa/index.html",
-    "precache-manifest.34e600cea71193261d35f3690dec27d5.js": "/studio.analytixa/precache-manifest.34e600cea71193261d35f3690dec27d5.js",
+    "precache-manifest.e5ef7d1c66437a8c6154c2628da9021a.js": "/studio.analytixa/precache-manifest.e5ef7d1c66437a8c6154c2628da9021a.js",
     "service-worker.js": "/studio.analytixa/service-worker.js",
     "static/css/main.eb5df336.chunk.css.map": "/studio.analytixa/static/css/main.eb5df336.chunk.css.map",
-    "static/js/2.7b312952.chunk.js.LICENSE.txt": "/studio.analytixa/static/js/2.7b312952.chunk.js.LICENSE.txt",
+    "static/js/2.08ba424c.chunk.js.LICENSE.txt": "/studio.analytixa/static/js/2.08ba424c.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/studio.analytixa/static/media/logo.0a5a4100.svg",
-    "static/media/logo1.svg": "/studio.analytixa/static/media/logo1.16659537.svg",
     "static/media/somethingWentWrongDark.svg": "/studio.analytixa/static/media/somethingWentWrongDark.485713aa.svg",
     "static/media/somethingWentWrongLight.svg": "/studio.analytixa/static/media/somethingWentWrongLight.29bd231b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c85ebe02.js",
-    "static/js/2.7b312952.chunk.js",
+    "static/js/2.08ba424c.chunk.js",
     "static/css/main.eb5df336.chunk.css",
-    "static/js/main.c1d1f387.chunk.js"
+    "static/js/main.f08cc6a3.chunk.js"
   ]
 }
