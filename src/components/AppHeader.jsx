@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import logo from '../assets/images/logo1.svg';
+import logo from '../assets/images/logo.svg';
 import { AppDrawer } from './AppDrawer';
 import { StoreManager } from '@rootzjs/store';
 import {
