@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54e5017c27010ad45c8f60cbb7ecbb56",
+    "revision": "a32c2e97e20b8aa6872a94c8f496ef59",
     "url": "/studio.analytixa/index.html"
   },
   {
-    "revision": "f015bf71832e7a95b07d",
+    "revision": "35158cd9d42d120a4513",
     "url": "/studio.analytixa/static/css/main.eb5df336.chunk.css"
   },
   {
-    "revision": "cbb7289d4faa36e59cbb",
-    "url": "/studio.analytixa/static/js/2.08ba424c.chunk.js"
+    "revision": "26640de45c1d599c5509",
+    "url": "/studio.analytixa/static/js/2.4e403686.chunk.js"
   },
   {
     "revision": "6f5f1c4a5f7f6e382b8aeca1b4ac8d96",
-    "url": "/studio.analytixa/static/js/2.08ba424c.chunk.js.LICENSE.txt"
+    "url": "/studio.analytixa/static/js/2.4e403686.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f015bf71832e7a95b07d",
-    "url": "/studio.analytixa/static/js/main.f08cc6a3.chunk.js"
+    "revision": "35158cd9d42d120a4513",
+    "url": "/studio.analytixa/static/js/main.3742e69d.chunk.js"
   },
   {
     "revision": "28e394a708c619e5b7c6",
