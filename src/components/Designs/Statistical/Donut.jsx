@@ -32,7 +32,7 @@ const SimpleDonutChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: "pie",
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -100,7 +100,7 @@ const MonochromeDonutChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: "pie",
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -175,7 +175,7 @@ const GradientDonutChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: "pie",
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -292,7 +292,7 @@ const VariableChartDonutChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: "variablepie",
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -367,7 +367,7 @@ const SemiCircleChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: "pie",
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,

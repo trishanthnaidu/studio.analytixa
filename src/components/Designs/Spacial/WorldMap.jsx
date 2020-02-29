@@ -68,8 +68,8 @@ const MapComponent = ({
                                     scale: 140
                               }}
                               style={{
-                                    height: 640,
-                                    width: "75vw"
+                                    height: theme.isMobile ? 440 : 640,
+                                    width: theme.isMobile ? "65vw" : "75vw",
                               }}
                         >
                               {/* <Sphere stroke="#E4E5E6" strokeWidth={0.5} />

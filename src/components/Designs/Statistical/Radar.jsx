@@ -32,7 +32,7 @@ const SimpleRadarChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   polar: true,
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   tickInterval: 45,
@@ -88,7 +88,7 @@ const MultiRadarChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   polar: true,
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   tickInterval: 45,
@@ -150,7 +150,7 @@ const SimplePolarChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   polar: true,
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   tickInterval: 45,
@@ -209,7 +209,7 @@ const RadialBarChart = () => {
                   polar: true,
                   type: 'column',
                   inverted: true,
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   tickInterval: 1,
@@ -283,7 +283,7 @@ const MultiPolarChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   polar: true,
-                  height: "100%"
+                  height: theme.isMobile ? 375 : "100%"
             },
             xAxis: {
                   tickInterval: 45,

@@ -8,8 +8,7 @@ export const Styles = makeStyles(theme => ({
             boxSizing: "border-box",
             marginTop: 50,
             overflowY: "auto",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
+            display: "grid",
+            justifyContent: "center"
       },
 }))

@@ -30,7 +30,7 @@ const SimpleGaugeChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: 'solidgauge',
-                  height: '100%',
+                  height: theme.isMobile ? 375 : "100%",
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -135,7 +135,7 @@ const GradientGaugeChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: 'solidgauge',
-                  height: '100%',
+                  height: theme.isMobile ? 375 : "100%",
             },
             xAxis: {
                   ...theme.chartConfig.xAxis,
@@ -273,7 +273,7 @@ const AppleActivityChart = () => {
             chart: {
                   ...theme.chartConfig.chart,
                   type: 'solidgauge',
-                  height: '100%',
+                  height: theme.isMobile ? 375 : "100%",
             },
             subtitle: {
                   text: `${theme.theme === "light" ? "*Switch to dark theme, for more accurate expeirence (toggle on top right)" : ""}`

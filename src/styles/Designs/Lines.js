@@ -3,8 +3,6 @@ import { makeStyles, fade } from "@material-ui/core/styles";
 export const Styles = makeStyles(theme => ({
       root: {
             marginBottom: 80,
-            display: "inline-flex",
-            flexDirection: "column"
       },
       title: {
             padding: "10px 5px",
@@ -228,11 +226,11 @@ export const Styles = makeStyles(theme => ({
             marginRight: 72,
 
             [theme.breakpoints.down('md')]: {
-                  marginRight: 50
+                  marginRight: 0
             },
 
             [theme.breakpoints.down('sm')]: {
-                  marginRight: 33,
+                  marginRight: 0,
             }
       },
       paperclusteredBubble: {
@@ -306,6 +304,8 @@ export const Styles = makeStyles(theme => ({
             padding: 15,
             borderRadius: 5,
             backgroundColor: theme.background["00"],
+            justifyContent: "center",
+            display: "flex",
 
             "& svg": {
                   transform: "translateY(15px)"
