@@ -53,7 +53,7 @@ export const LIGHT_THEME_PROPS = {
       },
       BACKGROUND: {
             "00": "#FFFFFF",
-            "10": "#F8F9FA",
+            "10": "#F7F6F5",
             "20": "#EEEEEE",
             "30": "#E2E2E2",
             "none": "transparent"

@@ -85,7 +85,7 @@
     "react-screen-orientation": "0.0.4",
     "react-simple-maps": "^1.0.0-beta.0",
     "react-test-renderer": "^16.10.2",
-    "react-tooltip": "^3.11.2",
+    "react-tooltip": "latest",
     "svg-url-loader": "^3.0.2",
     "underscore": "^1.9.1",
     "webpack": "4.41.5",

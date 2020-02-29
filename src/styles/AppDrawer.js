@@ -21,12 +21,21 @@ export const Styles = makeStyles(theme => ({
             backgroundColor: theme.background[10],
             color: theme.text[10],
             border: "none",
+            marginTop: 60,
+
+            "& hr:last-child": {
+                  display: "none"
+            }
       },
       drawerPaperMobile: {
             width: drawerWidthMobile,
             backgroundColor: theme.background[10],
             color: theme.text[10],
             border: "none",
+
+            "& hr:last-child": {
+                  display: "none"
+            }
       },
       icons: {
             color: theme.text[30],
@@ -90,7 +99,8 @@ export const Styles = makeStyles(theme => ({
             alignItems: "center"
       },
       iconContainer: {
-            padding: "10px 0 10px 0"
+            padding: "10px 0 10px 0",
+            color: theme.text[50]
       },
       title: {
             display: "inline-flex",
@@ -114,5 +124,8 @@ export const Styles = makeStyles(theme => ({
       logoSectionDrawer: {
             display: "flex",
             padding: "5px 15px"
+      },
+      rotateIcon90deg:{
+            transform: "rotate(135deg)"
       }
 }));

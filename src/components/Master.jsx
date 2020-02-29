@@ -46,9 +46,9 @@ const Component = ({ state, props }) => {
 }
 
 const Designs = props => {
-      const classes = Styles();
+      const styl = Styles();
       return (
-            <div className={classes.root} >
+            <div className={styl.root} >
                   <CssBaseline />
                   <AppHeader {...props} />
                   {

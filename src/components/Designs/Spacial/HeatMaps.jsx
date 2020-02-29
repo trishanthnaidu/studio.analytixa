@@ -7,7 +7,6 @@ import {
 } from '../../Core';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import HighchartsPatternFill from 'highcharts-pattern-fill';
 import HighchartsTreeMap from 'highcharts/modules/treemap';
 import HighchartBoost from 'highcharts/modules/boost';
 import HighchartHeatMaps from 'highcharts/modules/heatmap';
@@ -32,7 +31,7 @@ export const HeatMaps = () => (
 
 
 const SimpleHeatMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const getPointCategoryName = (point, dimension) => {
             var series = point.series,
@@ -104,11 +103,11 @@ const SimpleHeatMap = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Dual Heat Map
                         </Typography>
-                  <Paper className={classes.paperSimpleHeat}>
+                  <Paper elevation={0} className={styl.paperSimpleHeat}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -119,7 +118,7 @@ const SimpleHeatMap = () => {
 }
 
 const MonochromaticHeatMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const getPointCategoryName = (point, dimension) => {
             var series = point.series,
@@ -191,11 +190,11 @@ const MonochromaticHeatMap = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Monochromatic Heat Map
                         </Typography>
-                  <Paper className={classes.paperSimpleHeat}>
+                  <Paper elevation={0} className={styl.paperSimpleHeat}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -206,7 +205,7 @@ const MonochromaticHeatMap = () => {
 }
 
 const SimpleTileMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const getPointCategoryName = (point, dimension) => {
             var series = point.series,
@@ -636,11 +635,11 @@ const SimpleTileMap = () => {
             }]
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Honeycomb Tile Chart
                         </Typography>
-                  <Paper className={classes.paperSimpleTile}>
+                  <Paper elevation={0} className={styl.paperSimpleTile}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -651,7 +650,7 @@ const SimpleTileMap = () => {
 }
 
 const MonochromaticTreeMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -738,11 +737,11 @@ const MonochromaticTreeMap = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Monochromatic Heat Tree Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleTree}>
+                  <Paper elevation={0} className={styl.paperSimpleTree}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -753,7 +752,7 @@ const MonochromaticTreeMap = () => {
 }
 
 const DualTreeMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -840,11 +839,11 @@ const DualTreeMap = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Dual Heat Tree Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleTree}>
+                  <Paper elevation={0} className={styl.paperSimpleTree}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -855,7 +854,7 @@ const DualTreeMap = () => {
 }
 
 const GroupedTreeMap = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -955,11 +954,11 @@ const GroupedTreeMap = () => {
             }],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Dual Heat Tree Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleTree}>
+                  <Paper elevation={0} className={styl.paperSimpleTree}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

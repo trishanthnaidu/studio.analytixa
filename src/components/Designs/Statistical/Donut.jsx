@@ -7,8 +7,6 @@ import {
 } from '../../Core';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import HighchartsPatternFill from 'highcharts-pattern-fill';
-import HighchartsMore from 'highcharts-more';
 import HighchartBoost from 'highcharts/modules/boost';
 import HighchartVariablePie from 'highcharts/modules/variable-pie';
 import { Styles } from '../../../styles/Designs/Lines';
@@ -27,7 +25,7 @@ export const Donut = () => (
 )
 
 const SimpleDonutChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -80,11 +78,11 @@ const SimpleDonutChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Donut Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -95,7 +93,7 @@ const SimpleDonutChart = () => {
 }
 
 const MonochromeDonutChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -155,11 +153,11 @@ const MonochromeDonutChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Monochromatic Donut Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -170,7 +168,7 @@ const MonochromeDonutChart = () => {
 }
 
 const GradientDonutChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -272,11 +270,11 @@ const GradientDonutChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Gradient Donut Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -287,7 +285,7 @@ const GradientDonutChart = () => {
 }
 
 const VariableChartDonutChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -347,11 +345,11 @@ const VariableChartDonutChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Variable Size Donut Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -362,7 +360,7 @@ const VariableChartDonutChart = () => {
 }
 
 const SemiCircleChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -424,11 +422,11 @@ const SemiCircleChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Rainbow Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

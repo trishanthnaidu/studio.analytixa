@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Lines } from '../Designs/Categorial/Lines';
 import { Area } from '../Designs/Categorial/Area';
 import { Bars } from '../Designs/Categorial/Bars';
@@ -7,6 +7,9 @@ import { Donut } from '../Designs/Statistical/Donut';
 import { ScatterPlot } from '../Designs/Coordinate/ScatterPlot';
 import { BubblePlot } from '../Designs/Coordinate/BubblePlot';
 import { HeatMaps } from '../Designs/Spacial/HeatMaps';
+import { Gauge } from '../Designs/Statistical/Gauge';
+import { Radar } from '../Designs/Statistical/Radar';
+import { WorldMap } from '../Designs/Spacial/WorldMap';
 
 import { Styles } from '../../styles/Playground';
 import { createStore, StoreManager } from '@rootzjs/store';
@@ -17,17 +20,24 @@ const ComponentMap = {
       Bars: Bars,
       Pie: Pie,
       Donut: Donut,
+      Gauge: Gauge,
+      Radar: Radar,
       "Heat Maps": HeatMaps,
       "Scatter Plot": ScatterPlot,
-      "Bubble Plot": BubblePlot
+      "Bubble Plot": BubblePlot,
+      "World Maps": WorldMap,
 }
 
 const Component = ({ props, state }) => {
-      const classes = Styles();
+      const styl = Styles();
       const Section = ComponentMap[state.activeSection];
+      useEffect(() => {
+            const doc = document.getElementById("main-container");
+            doc.scrollTop = 0;
+      })
       return (
             <main>
-                  <div className={classes.root}>
+                  <div id="main-container" className={styl.root}>
                         <Section />
                   </div>
             </main>

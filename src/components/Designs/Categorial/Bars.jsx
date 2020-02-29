@@ -42,7 +42,7 @@ export const Bars = () => (
 )
 
 const SimpleBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -62,11 +62,11 @@ const SimpleBarChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Bar Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -77,7 +77,7 @@ const SimpleBarChart = () => {
 }
 
 const GradientBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -109,11 +109,11 @@ const GradientBarChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Gradient Bar Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -124,7 +124,7 @@ const GradientBarChart = () => {
 }
 
 const SimpleLollipopChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -156,11 +156,11 @@ const SimpleLollipopChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Lollipop Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -171,7 +171,7 @@ const SimpleLollipopChart = () => {
 }
 
 const SimpleCableBrideChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -209,11 +209,11 @@ const SimpleCableBrideChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Cable-Stayed Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -224,7 +224,7 @@ const SimpleCableBrideChart = () => {
 }
 
 const SimpleLipstickChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -253,11 +253,11 @@ const SimpleLipstickChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Lipstick Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -268,7 +268,7 @@ const SimpleLipstickChart = () => {
 }
 
 const GradientLipstickChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -308,11 +308,11 @@ const GradientLipstickChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Gradient Lipstick Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -323,7 +323,7 @@ const GradientLipstickChart = () => {
 }
 
 const ContrastBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -405,11 +405,11 @@ const ContrastBarChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Contrast Bar Chart
                   </Typography>
-                  <Paper className={classes.paperContrastSpline}>
+                  <Paper elevation={0} className={styl.paperContrastSpline}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -420,7 +420,7 @@ const ContrastBarChart = () => {
 }
 
 const ZonedBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -456,11 +456,11 @@ const ZonedBarChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Bar Zone Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -471,7 +471,7 @@ const ZonedBarChart = () => {
 }
 
 const RangeBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -514,11 +514,11 @@ const RangeBarChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Bar Range Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -529,7 +529,7 @@ const RangeBarChart = () => {
 }
 
 const SimpleDumbellChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -602,11 +602,11 @@ const SimpleDumbellChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Dumbbell Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -617,7 +617,7 @@ const SimpleDumbellChart = () => {
 }
 
 const MultipleBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -645,11 +645,11 @@ const MultipleBarChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Grouped Bar Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -660,7 +660,7 @@ const MultipleBarChart = () => {
 }
 
 const StackedBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -695,11 +695,11 @@ const StackedBarChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Stacked Bar Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -710,7 +710,7 @@ const StackedBarChart = () => {
 }
 
 const VerticalBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -731,11 +731,11 @@ const VerticalBarChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Vertical Bar Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -746,7 +746,7 @@ const VerticalBarChart = () => {
 }
 
 const VerticalGroupedBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -775,11 +775,11 @@ const VerticalGroupedBarChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Vertical Grouped Bar Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -790,7 +790,7 @@ const VerticalGroupedBarChart = () => {
 }
 
 const VerticalStackedBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -826,11 +826,11 @@ const VerticalStackedBarChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Vertical Stacked Bar Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -841,7 +841,7 @@ const VerticalStackedBarChart = () => {
 }
 
 const PyramidBarChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -880,11 +880,11 @@ const PyramidBarChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Pyramid Bar Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -895,7 +895,7 @@ const PyramidBarChart = () => {
 }
 
 const PyramidLipstickChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -940,11 +940,11 @@ const PyramidLipstickChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Pyramid Lipstick Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -955,7 +955,7 @@ const PyramidLipstickChart = () => {
 }
 
 const PyramidLollipopChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -1002,11 +1002,11 @@ const PyramidLollipopChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Pyramid Lollipop Chart
                   </Typography>
-                  <Paper className={classes.verticalBarChart}>
+                  <Paper elevation={0} className={styl.verticalBarChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

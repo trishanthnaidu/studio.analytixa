@@ -145,6 +145,14 @@ export const chartThemeStyles = selectedTheme => ({
                         },
                         showInLegend: true,
                         borderColor: "#FFFFFF60"
+                  },
+                  solidgauge: {
+                        dataLabels: {
+                              enabled: false
+                        },
+                        linecap: 'round',
+                        stickyTracking: false,
+                        rounded: true
                   }
             },
             tooltip: {

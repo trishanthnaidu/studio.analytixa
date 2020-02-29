@@ -24,7 +24,7 @@ export const BubblePlot = () => (
 )
 
 const SimpleBubblePlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -90,11 +90,11 @@ const SimpleBubblePlot = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Bubble Chart
                         </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -104,7 +104,7 @@ const SimpleBubblePlot = () => {
       )
 }
 const ThreeDimensionalBubblePlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -184,11 +184,11 @@ const ThreeDimensionalBubblePlot = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         3D Bubble Chart
                         </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -198,7 +198,7 @@ const ThreeDimensionalBubblePlot = () => {
       )
 }
 const GroupedBubblePlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -249,11 +249,11 @@ const GroupedBubblePlot = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Free Float Bubble Chart
                         </Typography>
-                  <Paper className={classes.paperclusteredBubble}>
+                  <Paper elevation={0} className={styl.paperclusteredBubble}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -263,7 +263,7 @@ const GroupedBubblePlot = () => {
       )
 }
 const GroupedSplitBubblePlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -317,11 +317,11 @@ const GroupedSplitBubblePlot = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Clustered Bubble Chart
                         </Typography>
-                  <Paper className={classes.paperclusteredBubble}>
+                  <Paper elevation={0} className={styl.paperclusteredBubble}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

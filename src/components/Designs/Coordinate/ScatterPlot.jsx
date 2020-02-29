@@ -32,7 +32,7 @@ const MillionScatterPlot = () => {
             ]);
       }
 
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             chart: {
@@ -89,11 +89,11 @@ const MillionScatterPlot = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         1 Million Dots Scatter Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -103,7 +103,7 @@ const MillionScatterPlot = () => {
       )
 }
 const SimpleScatterPlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -233,11 +233,11 @@ const SimpleScatterPlot = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Scatter Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -247,7 +247,7 @@ const SimpleScatterPlot = () => {
       )
 }
 const DotScatterPlot = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -391,11 +391,11 @@ const DotScatterPlot = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Dot Scatter Plot
                         </Typography>
-                  <Paper className={classes.paperSimpleBar}>
+                  <Paper elevation={0} className={styl.paperSimpleBar}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

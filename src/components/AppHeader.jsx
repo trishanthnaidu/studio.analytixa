@@ -25,7 +25,7 @@ import {
 import { Styles } from "../styles/AppHeader";
 
 export const AppHeader = ({ route }) => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const isLight = theme.theme === "light";
       const onThemeChange = evt => {
@@ -37,29 +37,29 @@ export const AppHeader = ({ route }) => {
             });
       }
       const MobileToolbar = () =>
-            <div className={classes.logoContainer}>
+            <div className={styl.logoContainer}>
                   <Tooltip title={`open filter section`} >
-                        <IconButton component="span" className={classes.hamburger}>
+                        <IconButton component="span" className={styl.hamburger}>
                               <MenuRounded onClick={onMenuOpen} />
                         </IconButton>
                   </Tooltip>
             </div>
       const DesktopToolbar = () =>
             <Fragment>
-                  <div className={classes.logoContainer}>
-                        <IconButton className={classes.iconContainer} disabled>
-                              <img className={classes.logo} src={logo} alt="logo" />
+                  <div className={styl.logoContainer}>
+                        <IconButton className={styl.iconContainer} disabled>
+                              <img className={styl.logo} src={logo} alt="logo" />
                         </IconButton>
                   </div>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+                  {/* <Typography className={styl.title} variant="h6" color="inherit">
                         Analytixa
                   </Typography>
-                  <Divider className={classes.divider} orientation="vertical" />
+                  <Divider className={styl.divider} orientation="vertical" /> */}
             </Fragment>
 
       return (
-            <div className={classes.root}>
-                  <AppBar position="fixed" className={classes.appBar}>
+            <div className={styl.root}>
+                  <AppBar position="fixed" className={styl.appBar}>
                         <Toolbar variant="dense">
                               {
                                     theme.isMobile ?
@@ -67,41 +67,41 @@ export const AppHeader = ({ route }) => {
                                           :
                                           <DesktopToolbar />
                               }
-                              <Typography className={classes.routeTitle} variant="h6" color="inherit">
+                              <Typography className={styl.routeTitle} variant="h6" color="inherit">
                                     {route.title}
                               </Typography>
                               {
                                     theme.isMobile ||
-                                    <div className={classes.search}>
-                                          <div className={classes.searchIcon}>
+                                    <div className={styl.search}>
+                                          <div className={styl.searchIcon}>
                                                 <SearchRounded />
                                           </div>
                                           <InputBase
                                                 placeholder="Search…"
                                                 classes={{
-                                                      root: classes.inputRoot,
-                                                      input: classes.inputInput,
+                                                      root: styl.inputRoot,
+                                                      input: styl.inputInput,
                                                 }}
                                                 inputProps={{ 'aria-label': 'search' }}
                                           />
                                     </div>
                               }
                               <Tooltip title={`More Apps`} >
-                                    <IconButton component="span" className={classes.moreApps}>
+                                    <IconButton component="span" className={styl.moreApps}>
                                           <ViewModuleRounded />
                                     </IconButton>
                               </Tooltip>
                               <Tooltip title={`toggle to ${theme.theme === "light" ? "dark" : "light"} theme`} >
                                     <Switch
-                                          className={classes.checkbox}
+                                          className={styl.checkbox}
                                           checked={!isLight}
                                           onChange={onThemeChange}
                                           color="primary"
                                           size="small"
-                                          icon={<Brightness3Rounded className={classes.themeTogglerDay} />}
-                                          checkedIcon={<Brightness7Rounded className={classes.themeTogglerNight} />}
+                                          icon={<Brightness3Rounded className={styl.themeTogglerDay} />}
+                                          checkedIcon={<Brightness7Rounded className={styl.themeTogglerNight} />}
                                           classes={{
-                                                track: classes.checkBoxTrack
+                                                track: styl.checkBoxTrack
                                           }}
                                     />
                               </Tooltip>

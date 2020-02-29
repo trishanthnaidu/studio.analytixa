@@ -25,7 +25,7 @@ export const Lines = () => (
 )
 
 const SimpleChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -41,11 +41,11 @@ const SimpleChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Line Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -53,7 +53,7 @@ const SimpleChart = () => {
 }
 
 const MultipleLineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -77,11 +77,11 @@ const MultipleLineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Multi-Line Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -89,7 +89,7 @@ const MultipleLineChart = () => {
 }
 
 const ContrastLineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -167,11 +167,11 @@ const ContrastLineChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Contrast Line Chart
                   </Typography>
-                  <Paper className={classes.paperContrastLine}>
+                  <Paper elevation={0} className={styl.paperContrastLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -179,7 +179,7 @@ const ContrastLineChart = () => {
 }
 
 const ZonedLineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -211,11 +211,11 @@ const ZonedLineChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Line Zone Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -224,7 +224,7 @@ const ZonedLineChart = () => {
 
 const RangeLineChart = () => {
       HighchartsMore(Highcharts.Highcharts);
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -263,11 +263,11 @@ const RangeLineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Line Range Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -275,7 +275,7 @@ const RangeLineChart = () => {
 }
 
 const SimpleSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -295,11 +295,11 @@ const SimpleSplineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Spline Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -307,7 +307,7 @@ const SimpleSplineChart = () => {
 }
 
 const MultipleSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -335,11 +335,11 @@ const MultipleSplineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Multi-Spline Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -347,7 +347,7 @@ const MultipleSplineChart = () => {
 }
 
 const ContrastSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -429,11 +429,11 @@ const ContrastSplineChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Contrast Spline Chart
                   </Typography>
-                  <Paper className={classes.paperContrastSpline}>
+                  <Paper elevation={0} className={styl.paperContrastSpline}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -441,7 +441,7 @@ const ContrastSplineChart = () => {
 }
 
 const ZonedSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -477,11 +477,11 @@ const ZonedSplineChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Spline Zone Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>
@@ -490,7 +490,7 @@ const ZonedSplineChart = () => {
 
 const RangeSplineChart = () => {
       HighchartsMore(Highcharts.Highcharts);
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -533,11 +533,11 @@ const RangeSplineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Spline Range Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleLine}>
+                  <Paper elevation={0} className={styl.paperSimpleLine}>
                         <Highcharts config={chartConfig}></Highcharts>
                   </Paper>
             </div>

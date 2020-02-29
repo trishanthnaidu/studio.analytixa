@@ -31,7 +31,8 @@ export const Styles = makeStyles(theme => ({
       logoContainer: {
       },
       iconContainer: {
-            padding: "10px 0 10px 0"
+            padding: "10px 0 10px 0",
+            color: theme.text[50]
       },
       logo: {
             height: 22,

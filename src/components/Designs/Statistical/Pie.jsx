@@ -27,7 +27,7 @@ export const Pie = () => (
 )
 
 const SimplePieChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -79,11 +79,11 @@ const SimplePieChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Pie Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -94,7 +94,7 @@ const SimplePieChart = () => {
 }
 
 const MonochromePieChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -153,11 +153,11 @@ const MonochromePieChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Monochromatic Pie Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -168,7 +168,7 @@ const MonochromePieChart = () => {
 }
 
 const GradientPieChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -269,11 +269,11 @@ const GradientPieChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Gradient Pie Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -284,7 +284,7 @@ const GradientPieChart = () => {
 }
 
 const VariableChartPieChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -341,11 +341,11 @@ const VariableChartPieChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Variable Size Pie Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -356,7 +356,7 @@ const VariableChartPieChart = () => {
 }
 
 const SemiCircleChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -415,11 +415,11 @@ const SemiCircleChart = () => {
             ],
       }
       return (
-            <div className={`${classes.root} ${classes.verticalAligned} ${classes.verticalAlignedFirst}`}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Half Pie Chart
                         </Typography>
-                  <Paper className={classes.paperPieChart}>
+                  <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

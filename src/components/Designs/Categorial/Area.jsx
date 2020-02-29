@@ -38,7 +38,7 @@ export const Area = () => (
 )
 
 const SimpleChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -61,11 +61,11 @@ const SimpleChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Area Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -76,7 +76,7 @@ const SimpleChart = () => {
 }
 
 const SimpleAreaWithLineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -97,11 +97,11 @@ const SimpleAreaWithLineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Line Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -112,7 +112,7 @@ const SimpleAreaWithLineChart = () => {
 }
 
 const SimpleAreaWithSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -160,11 +160,11 @@ const SimpleAreaWithSplineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Spline Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -175,7 +175,7 @@ const SimpleAreaWithSplineChart = () => {
 }
 
 const AreaWithGradientChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -213,11 +213,11 @@ const AreaWithGradientChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Gradient Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -228,7 +228,7 @@ const AreaWithGradientChart = () => {
 }
 
 const MultipleAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -304,11 +304,11 @@ const MultipleAreaChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Multi-Line Area Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -319,7 +319,7 @@ const MultipleAreaChart = () => {
 }
 
 const MultipleAreaChartSpline = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -398,11 +398,11 @@ const MultipleAreaChartSpline = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Multi-Spline Area Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -413,7 +413,7 @@ const MultipleAreaChartSpline = () => {
 }
 
 const ContrastAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -495,11 +495,11 @@ const ContrastAreaChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Contrast Area Chart
                   </Typography>
-                  <Paper className={classes.paperContrastArea}>
+                  <Paper elevation={0} className={styl.paperContrastArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -510,7 +510,7 @@ const ContrastAreaChart = () => {
 }
 
 const ContrastAreaWithSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -598,11 +598,11 @@ const ContrastAreaWithSplineChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Contrast Area Spline Chart
                   </Typography>
-                  <Paper className={classes.paperContrastAreaSpline}>
+                  <Paper elevation={0} className={styl.paperContrastAreaSpline}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -613,7 +613,7 @@ const ContrastAreaWithSplineChart = () => {
 }
 
 const ZonedAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -688,11 +688,11 @@ const ZonedAreaChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Zone Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -703,7 +703,7 @@ const ZonedAreaChart = () => {
 }
 
 const ZonedSplineAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -778,11 +778,11 @@ const ZonedSplineAreaChart = () => {
             }
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Spline Zone Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -793,7 +793,7 @@ const ZonedSplineAreaChart = () => {
 }
 
 const RangeAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -843,11 +843,11 @@ const RangeAreaChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Range Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -858,7 +858,7 @@ const RangeAreaChart = () => {
 }
 
 const RangeAreaSplineChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -908,11 +908,11 @@ const RangeAreaSplineChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Area Spline Range Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -923,7 +923,7 @@ const RangeAreaSplineChart = () => {
 }
 
 const PatternAreaChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -968,11 +968,11 @@ const PatternAreaChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Patterned Area Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -983,7 +983,7 @@ const PatternAreaChart = () => {
 }
 
 const PatternAreaWithGradientChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -1061,11 +1061,11 @@ const PatternAreaWithGradientChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Patterned Gradient Area Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
@@ -1076,7 +1076,7 @@ const PatternAreaWithGradientChart = () => {
 }
 
 const SteamChart = () => {
-      const classes = Styles();
+      const styl = Styles();
       const theme = useTheme();
       const chartConfig = {
             ...theme.chartConfig,
@@ -1292,11 +1292,11 @@ const SteamChart = () => {
             ],
       }
       return (
-            <div className={classes.root}>
-                  <Typography className={classes.title} variant="h6" color="inherit">
+            <div className={styl.root}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
                         Steam Chart
                   </Typography>
-                  <Paper className={classes.paperSimpleArea}>
+                  <Paper elevation={0} className={styl.paperSimpleArea}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>

@@ -25,7 +25,9 @@ import {
       PieChartRounded,
       DonutLargeRounded,
       MapRounded,
-      ViewCompactRounded
+      ViewCompactRounded,
+      WifiTetheringRounded,
+      TimelapseRounded
 } from './Core';
 import { Styles } from "../styles/AppDrawer";
 
@@ -33,7 +35,7 @@ const Component = ({ props, state }) => {
       const { route } = props;
       const { isMenuOpen, sections, iconSvgMappings, activeSection } = state;
       const theme = useTheme();
-      const classes = Styles();
+      const styl = Styles();
       const onSectionClick = item => {
             StoreManager.update("#AppDrawerComponent", {
                   isMenuOpen: false,
@@ -41,7 +43,8 @@ const Component = ({ props, state }) => {
             });
             StoreManager.update("#PlaygroundComponent", {
                   activeSection: item
-            })
+            });
+            window.scrollTo(0, 0);
       }
       const generateSections = () => {
             const keys = Object.keys(sections[route.title]);
@@ -49,23 +52,23 @@ const Component = ({ props, state }) => {
                   const component = [];
                   component.push(
                         <Fragment>
-                              <Divider className={classes.divider} />
                               <List>
-                                    <ListSubheader component="div" className={classes.listSubHeader}>
+                                    <ListSubheader component="div" className={styl.listSubHeader}>
                                           {key}
                                     </ListSubheader>
                                     {sections[route.title][key].map((text, index) => {
                                           const MappedIcons = iconSvgMappings[route.title][text];
                                           return (
-                                                <ListItem button className={`${classes.listItem} ${activeSection === text && classes.activeSection}`} onClick={() => onSectionClick(text)}>
-                                                      <ListItemIcon className={classes.icons}>
-                                                            <MappedIcons className={classes.iconSvg} />
+                                                <ListItem button className={`${styl.listItem} ${activeSection === text && styl.activeSection}`} onClick={() => onSectionClick(text)}>
+                                                      <ListItemIcon className={styl.icons}>
+                                                            <MappedIcons className={`${styl.iconSvg} ${text === "Gauge" && styl.rotateIcon90deg}`} />
                                                       </ListItemIcon>
-                                                      <ListItemText primary={text} className={classes.sectionText} />
+                                                      <ListItemText primary={text} className={styl.sectionText} />
                                                 </ListItem>
                                           )
                                     })}
                               </List>
+                              <Divider className={styl.divider} />
                         </Fragment>
                   )
                   return component;
@@ -86,43 +89,35 @@ const Component = ({ props, state }) => {
       }
       const sideList = side => (
             <div
-                  className={classes.list}
+                  className={styl.list}
                   role="presentation"
             >
-                  <div className={classes.logoSectionDrawer}>
-                        <div className={classes.logoContainer}>
-                              <IconButton className={classes.iconContainer} disabled>
-                                    <img className={classes.logo} src={logo} alt="logo" />
+                  <div className={styl.logoSectionDrawer}>
+                        <div className={styl.logoContainer}>
+                              <IconButton className={styl.iconContainer} disabled>
+                                    <img className={styl.logo} src={logo} alt="logo" />
                               </IconButton>
                         </div>
-                        <Typography className={`${classes.title} ${classes.titleMobileExtraCss}`} variant="h6" color="inherit">
+                        <Typography className={`${styl.title} ${styl.titleMobileExtraCss}`} variant="h6" color="inherit">
                               Analytixa
                         </Typography>
-                        <div className={classes.closeContainer}>
-                              <IconButton className={classes.iconContainer}>
+                        <div className={styl.closeContainer}>
+                              <IconButton className={styl.iconContainer}>
                                     <CloseRounded onClick={onCloseClick} />
                               </IconButton>
                         </div>
                   </div>
-                  <Divider className={classes.dividerMain} />
-                  <List>
-                        <ListItem button className={`${classes.listItem} ${activeSection === "Dashboard" && classes.activeSection}`} onClick={() => onSectionClick("Dashboard")}>
-                              <ListItemIcon className={classes.icons}>
-                                    <DashboardRounded />
-                              </ListItemIcon>
-                              <ListItemText primary="Dashboard" className={classes.sectionText} />
-                        </ListItem>
-                  </List>
+                  <Divider className={styl.dividerMain} />
                   {generateSections()}
             </div>
       )
       return (
-            <div className={classes.root}>
+            <div className={styl.root}>
                   {
                         theme.isMobile ?
                               <SwipeableDrawer
-                                    className={classes.drawer}
-                                    classes={{ paper: classes.drawerPaperMobile }}
+                                    className={styl.drawer}
+                                    classes={{ paper: styl.drawerPaperMobile }}
                                     open={isMenuOpen}
                                     onOpen={onMenuOpen}
                                     onClose={onMenuClose}
@@ -131,20 +126,10 @@ const Component = ({ props, state }) => {
                               </SwipeableDrawer>
                               :
                               <Drawer
-                                    className={classes.drawer}
+                                    className={styl.drawer}
                                     variant="permanent"
-                                    classes={{ paper: classes.drawerPaper }}
+                                    classes={{ paper: styl.drawerPaper }}
                               >
-
-                                    <div className={classes.toolbar} />
-                                    <List>
-                                          <ListItem button className={`${classes.listItem} ${activeSection === "Dashboard" && classes.activeSection}`} onClick={onSectionClick}>
-                                                <ListItemIcon className={classes.icons}>
-                                                      <DashboardRounded />
-                                                </ListItemIcon>
-                                                <ListItemText primary="Dashboard" className={classes.sectionText} />
-                                          </ListItem>
-                                    </List>
                                     {generateSections()}
                               </Drawer>
                   }
@@ -163,7 +148,7 @@ export const AppDrawer =
                         Studio: {
                               Categorial: ['Lines', 'Bars', 'Area'],
                               Coordinate: ['Scatter Plot', 'Bubble Plot'],
-                              Statistical: ['Pie', 'Donut'],
+                              Statistical: ['Pie', 'Donut', 'Gauge', 'Radar'],
                               Spacial: ['Heat Maps', 'World Maps']
                         },
                         Insights: {
@@ -181,6 +166,8 @@ export const AppDrawer =
                               "Bubble Plot": BubbleChartRounded,
                               "Pie": PieChartRounded,
                               "Donut": DonutLargeRounded,
+                              "Gauge": WifiTetheringRounded,
+                              "Radar": TimelapseRounded,
                               "Heat Maps": ViewCompactRounded,
                               "World Maps": MapRounded,
                               "Section 9": BlurLinearRounded,

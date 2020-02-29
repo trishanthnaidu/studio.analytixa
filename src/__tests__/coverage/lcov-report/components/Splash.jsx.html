@@ -239,16 +239,16 @@ const Component = props =&gt; {
     }
 &nbsp;
     return (
-        &lt;div className={classes.root}&gt;
+        &lt;div className={styl.root}&gt;
             {
                 showTermsOfUsePanel &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;TermsOfUse onCloseClick={onTermsOfUsePanelClose} isTermsChecked={termsChecked} acceptTerms={onChecked} /&gt;</span>
             }
-            &lt;div className={classes.loginPanel}&gt;
-                &lt;div className={classes.loginContainer}&gt;
-                    &lt;img className={classes.logo} src={logo} alt="logo" /&gt;
-                    &lt;hr className={classes.prismUnderline} /&gt;
-                    &lt;p className={classes.desc}&gt;Login with your organisation credentials&lt;/p&gt;
-                    &lt;div className={classes.termsNConditionContainer}&gt;
+            &lt;div className={styl.loginPanel}&gt;
+                &lt;div className={styl.loginContainer}&gt;
+                    &lt;img className={styl.logo} src={logo} alt="logo" /&gt;
+                    &lt;hr className={styl.prismUnderline} /&gt;
+                    &lt;p className={styl.desc}&gt;Login with your organisation credentials&lt;/p&gt;
+                    &lt;div className={styl.termsNConditionContainer}&gt;
                         &lt;Marker
                             show={!termsChecked}
                             title="Please accept Terms of Use to Proceed with Login"
@@ -256,37 +256,37 @@ const Component = props =&gt; {
                             &lt;Checkbox
                                 onChange={onChecked}
                                 checked={termsChecked}
-                                className={!termsChecked &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >classes.checkboxError}</span> /&gt;
+                                className={!termsChecked &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >styl.checkboxError}</span> /&gt;
                         &lt;/Marker&gt;
-                        &lt;span className={classes.termsNConditionText}&gt;By logging in, I agree with &amp;nbsp;
-                            &lt;span className={classes.termsAnchor} onClick={onTermsOfUseClick} &gt;Terms of Use&lt;/span&gt;
+                        &lt;span className={styl.termsNConditionText}&gt;By logging in, I agree with &amp;nbsp;
+                            &lt;span className={styl.termsAnchor} onClick={onTermsOfUseClick} &gt;Terms of Use&lt;/span&gt;
                         &lt;/span&gt;
                     &lt;/div&gt;
-                    &lt;div className={classes.buttonContainer}&gt;
+                    &lt;div className={styl.buttonContainer}&gt;
                         &lt;Button
                             text="Okta"
-                            className={classes.starButton}
+                            className={styl.starButton}
                             disabled={!termsChecked}
                             href={navigateTo}
                         /&gt;
 &nbsp;
                         &lt;Tooltip
                             title="coming soon !!"
-                            className={classes.MYIDupcoming}
+                            className={styl.MYIDupcoming}
                             placement="top"
                         &gt;
                             &lt;Button
                                 text="MyID"
                                 color="secondary"
-                                className={classes.disneyButton}
+                                className={styl.disneyButton}
                                 disabled={true}
                             /&gt;
                         &lt;/Tooltip&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
-            &lt;div className={classes.newsFeedsContainer}&gt;
-                &lt;img className={classes.imgPrismDesc} src={imgPrismDesc} alt="imgPrismDesc" /&gt;
+            &lt;div className={styl.newsFeedsContainer}&gt;
+                &lt;img className={styl.imgPrismDesc} src={imgPrismDesc} alt="imgPrismDesc" /&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     )

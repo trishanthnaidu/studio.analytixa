@@ -64,4 +64,7 @@ export {
       MapRounded,
       ViewCompactRounded,
       BlurLinearRounded,
+      WifiTetheringRounded,
+      TimelapseRounded,
+      PaletteRounded
 } from '@material-ui/icons';

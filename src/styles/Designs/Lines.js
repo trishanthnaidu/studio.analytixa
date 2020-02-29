@@ -3,6 +3,8 @@ import { makeStyles, fade } from "@material-ui/core/styles";
 export const Styles = makeStyles(theme => ({
       root: {
             marginBottom: 80,
+            display: "inline-flex",
+            flexDirection: "column"
       },
       title: {
             padding: "10px 5px",
@@ -15,7 +17,7 @@ export const Styles = makeStyles(theme => ({
             height: 300,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: -10
@@ -34,7 +36,7 @@ export const Styles = makeStyles(theme => ({
             height: 300,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: theme.isMobile ? 0 : -10
@@ -53,7 +55,7 @@ export const Styles = makeStyles(theme => ({
             height: 300,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: theme.isMobile ? 0 : -10
@@ -72,7 +74,7 @@ export const Styles = makeStyles(theme => ({
             height: theme.isMobile ? 350 : 500,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: theme.isMobile ? -20 : -10
@@ -91,7 +93,7 @@ export const Styles = makeStyles(theme => ({
             height: 500,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: -10
@@ -110,7 +112,7 @@ export const Styles = makeStyles(theme => ({
             height: theme.isMobile ? 275 : 500,
             padding: 7,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: -10
@@ -205,7 +207,7 @@ export const Styles = makeStyles(theme => ({
             height: theme.isMobile ? 500 : 600,
             padding: 10,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: theme.isMobile ? 0 : -10
@@ -238,7 +240,7 @@ export const Styles = makeStyles(theme => ({
             height: theme.isMobile ? 350 : 500,
             padding: 15,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: -10
@@ -257,7 +259,7 @@ export const Styles = makeStyles(theme => ({
             height: theme.isMobile ? 375 : 500,
             padding: 15,
             borderRadius: 5,
-            backgroundColor: theme.background[20],
+            backgroundColor: theme.background["00"],
 
             "& div.highcharts-container": {
                   marginTop: -10
@@ -270,5 +272,76 @@ export const Styles = makeStyles(theme => ({
             "& div.highcharts-container svg path.highcharts-crosshair": {
                   stroke: fade(theme.palette.primary.main, 0.075),
             }
+      },
+      paperRadarChart: {
+            width: theme.isMobile ? "92vw" : "35vw",
+            height: theme.isMobile ? 375 : 500,
+            padding: 15,
+            borderRadius: 5,
+            backgroundColor: theme.background["00"],
+
+            "& div.highcharts-container": {
+                  marginTop: -10
+            },
+
+            "& div.highcharts-container svg .highcharts-background": {
+                  fill: "transparent",
+            },
+
+            "& div.highcharts-container svg path.highcharts-crosshair": {
+                  stroke: fade(theme.palette.primary.main, 0.075),
+            },
+
+            "& div.highcharts-container svg path.highcharts-grid-line": {
+                  stroke: fade(theme.text[40], 0.1),
+            },
+
+            "& div.highcharts-container svg path.highcharts-axis-line": {
+                  stroke: fade(theme.text[40], 0.15),
+            }
+      },
+      paperWorldMap: {
+            width: theme.isMobile ? "92vw" : "75vw",
+            height: theme.isMobile ? 375 : 550,
+            padding: 15,
+            borderRadius: 5,
+            backgroundColor: theme.background["00"],
+
+            "& svg": {
+                  transform: "translateY(15px)"
+            },
+
+            "& .__react_component_tooltip": {
+                  color: "#FFF",
+                  padding: "4px 8px",
+                  fontSize: "11px",
+                  lineHeight: "1.4em",
+                  borderRadius: 5,
+                  backgroundColor: theme.palette.primary.main
+            },
+            "& .__react_component_tooltip.type-dark.place-top:after": {
+                  borderTopColor: "#f44335"
+            }
+      },
+      states: {
+            outline: "none",
+            zIndex: 1,
+            cursor: "pointer",
+            transition: "fill 0.3s ease",
+            strokeWidth: 1,
+            strokeLinecap: "round",
+            stroke: fade(theme.reverse.background[10], 0.25)
+      },
+      grayStates: {
+            outline: "none",
+            zIndex: 1,
+            cursor: "pointer",
+            transition: "fill 0.3s ease",
+            strokeWidth: 1,
+            strokeLinecap: "round",
+            fill: fade(theme.background[30], 0.3)
+      },
+      toggleContainer: {
+
       }
 }))
