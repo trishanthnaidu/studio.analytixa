@@ -19,8 +19,10 @@ export const Donut = () => (
             <SimpleDonutChart />
             <MonochromeDonutChart />
             <GradientDonutChart />
+            <NestedSimpleDonutChart />
             <VariableChartDonutChart />
             <SemiCircleChart />
+            <NestedSemiCircleChart />
       </Fragment>
 )
 
@@ -81,6 +83,142 @@ const SimpleDonutChart = () => {
             <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
                   <Typography className={styl.title} variant="h6" color="inherit">
                         Simple Donut Chart
+                        </Typography>
+                  <Paper elevation={0} className={styl.paperPieChart}>
+                        <HighchartsReact
+                              highcharts={Highcharts}
+                              options={chartConfig}>
+                        </HighchartsReact>
+                  </Paper>
+            </div>
+      )
+}
+
+const NestedSimpleDonutChart = () => {
+      const styl = Styles();
+      const theme = useTheme();
+      const chartConfig = {
+            ...theme.chartConfig,
+            chart: {
+                  ...theme.chartConfig.chart,
+                  type: "pie",
+                  height: theme.isMobile ? 375 : "100%"
+            },
+            xAxis: {
+                  ...theme.chartConfig.xAxis,
+                  startOnTick: true,
+                  endOnTick: true,
+                  showLastLabel: true,
+            },
+            tooltip: {
+                  pointFormat: '<span>{series.name}</span>: <b>{point.percentage:.1f} %</b><br/>'
+            },
+            series: [
+                  {
+                        name: "Turnover",
+                        minPointSize: 5,
+                        innerSize: '65%',
+                        size: '56%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  },
+                  {
+                        name: "Sales",
+                        minPointSize: 10,
+                        innerSize: '75%',
+                        size: '78%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  },
+                  {
+                        name: "Predictions",
+                        minPointSize: 10,
+                        innerSize: '80%',
+                        size: '100%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  }
+            ],
+      }
+      return (
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
+                        Simple Nested Donut Chart
                         </Typography>
                   <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact
@@ -425,6 +563,150 @@ const SemiCircleChart = () => {
             <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
                   <Typography className={styl.title} variant="h6" color="inherit">
                         Rainbow Chart
+                        </Typography>
+                  <Paper elevation={0} className={styl.paperPieChart}>
+                        <HighchartsReact
+                              highcharts={Highcharts}
+                              options={chartConfig}>
+                        </HighchartsReact>
+                  </Paper>
+            </div>
+      )
+}
+
+const NestedSemiCircleChart = () => {
+      const styl = Styles();
+      const theme = useTheme();
+      const chartConfig = {
+            ...theme.chartConfig,
+            chart: {
+                  ...theme.chartConfig.chart,
+                  type: "pie",
+                  height: theme.isMobile ? 375 : "100%"
+            },
+            xAxis: {
+                  ...theme.chartConfig.xAxis,
+                  startOnTick: true,
+                  endOnTick: true,
+                  showLastLabel: true,
+            },
+            plotOptions: {
+                  pie: {
+                        ...theme.chartConfig.plotOptions.pie,
+                        startAngle: -90,
+                        endAngle: 90,
+                        center: ['50%', '75%'],
+                  }
+            },
+            tooltip: {
+                  pointFormat: '<span>{series.name}</span>: <b>{point.percentage:.1f} %</b><br/>'
+            },
+            series: [
+                  {
+                        name: "Turnover",
+                        minPointSize: 5,
+                        innerSize: '65%',
+                        size: '56%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  },
+                  {
+                        name: "Sales",
+                        minPointSize: 10,
+                        innerSize: '75%',
+                        size: '78%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  },
+                  {
+                        name: "Predictions",
+                        minPointSize: 10,
+                        innerSize: '80%',
+                        size: '100%',
+                        borderWidth: 0,
+                        zMin: 0,
+                        data: [{
+                              name: "Analytixa",
+                              y: 40,
+                        }, {
+                              name: "Apple",
+                              y: 15,
+                        }, {
+                              name: "Google",
+                              y: 10,
+                        }, {
+                              name: "Amazon",
+                              y: 15,
+                        }, {
+                              name: "Microsoft",
+                              y: 5,
+                        }, {
+                              name: "Adobe",
+                              y: 10,
+                        }, {
+                              name: "Disney",
+                              y: 5
+                        }],
+                        marker: {
+                              enabled: false
+                        },
+                  }
+            ],
+      }
+      return (
+            <div className={`${styl.root} ${styl.verticalAligned} ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
+                        Nested Rainbow Chart
                         </Typography>
                   <Paper elevation={0} className={styl.paperPieChart}>
                         <HighchartsReact

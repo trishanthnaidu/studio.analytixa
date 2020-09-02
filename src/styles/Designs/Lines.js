@@ -271,6 +271,25 @@ export const Styles = makeStyles(theme => ({
                   stroke: fade(theme.palette.primary.main, 0.075),
             }
       },
+      paperSemiPieChart: {
+            width: theme.isMobile ? "92vw" : "35vw",
+            height: theme.isMobile ? 275 : 300,
+            padding: 15,
+            borderRadius: 5,
+            backgroundColor: theme.background["00"],
+
+            "& div.highcharts-container": {
+                  marginTop: -10
+            },
+
+            "& div.highcharts-container svg .highcharts-background": {
+                  fill: "transparent",
+            },
+
+            "& div.highcharts-container svg path.highcharts-crosshair": {
+                  stroke: fade(theme.palette.primary.main, 0.075),
+            }
+      },
       paperRadarChart: {
             width: theme.isMobile ? "92vw" : "35vw",
             height: theme.isMobile ? 375 : 500,

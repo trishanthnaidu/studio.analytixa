@@ -19,6 +19,7 @@ export const Gauge = () => (
             <SimpleGaugeChart />
             <AppleActivityChart />
             <GradientGaugeChart />
+            <GradientSemiGaugeChart />
       </Fragment>
 )
 
@@ -391,6 +392,111 @@ const AppleActivityChart = () => {
                         Apple Activity Chart
                         </Typography>
                   <Paper elevation={0} className={styl.paperPieChart}>
+                        <HighchartsReact
+                              highcharts={Highcharts}
+                              options={chartConfig}>
+                        </HighchartsReact>
+                  </Paper>
+            </div>
+      )
+}
+
+const GradientSemiGaugeChart = () => {
+      const styl = Styles();
+      const theme = useTheme();
+      const chartConfig = {
+            ...theme.chartConfig,
+            chart: {
+                  ...theme.chartConfig.chart,
+                  type: 'solidgauge',
+                  height: theme.isMobile ? 375 : "100%",
+            },
+            xAxis: {
+                  ...theme.chartConfig.xAxis,
+                  startOnTick: true,
+                  endOnTick: true,
+                  showLastLabel: true,
+            },
+            tooltip: {
+                  borderWidth: 0,
+                  backgroundColor: 'none',
+                  shadow: false,
+                  style: {
+                        fontSize: '16px'
+                  },
+                  valueSuffix: '%',
+                  pointFormat: '<span style="color: ' + theme.text[40] + '"><b>{series.name}</b></span><br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+                  positioner: function (labelWidth) {
+                        return {
+                              x: 205,  //(this.chart.chartWidth - labelWidth) / 2,
+                              y: 200, //(this.chart.plotHeight / 2) + 15
+                        };
+                  }
+            },
+            pane: {
+                  startAngle: -90,
+                  endAngle: 90,
+                  background: [{
+                        outerRadius: '0%',
+                        innerRadius: '0%',
+                        backgroundColor: Highcharts.color(theme.chartConfig.colors[0])
+                              .setOpacity(0.3)
+                              .get(),
+                        borderWidth: 0
+                  }, {
+                        outerRadius: '0%',
+                        innerRadius: '0%',
+                        backgroundColor: Highcharts.color(theme.chartConfig.colors[1])
+                              .setOpacity(0.3)
+                              .get(),
+                        borderWidth: 0
+                  }, {
+                        outerRadius: '0%',
+                        innerRadius: '0%',
+                        backgroundColor: Highcharts.color(theme.chartConfig.colors[2])
+                              .setOpacity(0.3)
+                              .get(),
+                        borderWidth: 0
+                  }]
+            },
+            yAxis: {
+                  min: 0,
+                  max: 100,
+                  lineWidth: 0,
+                  tickPositions: []
+            },
+            series: [{
+                  name: 'Move',
+                  data: [{
+                        color: theme.chartConfig.colors[0],
+                        radius: '112%',
+                        innerRadius: '88%',
+                        y: 80
+                  }]
+            }, {
+                  name: 'Exercise',
+                  data: [{
+                        color: theme.chartConfig.colors[1],
+                        radius: '87%',
+                        innerRadius: '63%',
+                        y: 65
+                  }]
+            }, {
+                  name: 'Stand',
+                  data: [{
+                        color: theme.chartConfig.colors[2],
+                        radius: '62%',
+                        innerRadius: '38%',
+                        y: 50
+                  }]
+            }],
+      }
+      return (
+            <div className={`${styl.root} ${styl.verticalAligned}  ${styl.verticalAlignedFirst}`}>
+                  <Typography className={styl.title} variant="h6" color="inherit">
+                        Semi Circular Gauge
+                        </Typography>
+                  <Paper elevation={0} className={styl.paperSemiPieChart}>
                         <HighchartsReact
                               highcharts={Highcharts}
                               options={chartConfig}>
