@@ -8,7 +8,7 @@
     "css-loader": "^3.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.9.0",
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^5.0.1"
   },
   "homepage": "https://github.com/studio.analytixa",
   "scripts": {
@@ -86,10 +86,10 @@
     "react-simple-maps": "^1.0.0-beta.0",
     "react-test-renderer": "^16.10.2",
     "react-tooltip": "latest",
-    "svg-url-loader": "^3.0.2",
+    "svg-url-loader": "^8.0.0",
     "underscore": "^1.9.1",
     "webpack": "4.41.5",
-    "webpack-cli": "^3.3.9",
+    "webpack-cli": "^3.3.12",
     "yarn-highcharts-rounded-corners": "^1.0.6"
   }
 }
